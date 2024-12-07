@@ -1,0 +1,13 @@
+{
+  "name": "minicamp 2024 in ishikawa",
+  "image": "node:20-alpine3.20",
+  "postCreateCommand": "yarn install && apk add curl",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "forwardPorts": [8080, 8081, 8082, 8083, 8084],
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+}
